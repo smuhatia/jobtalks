@@ -1,0 +1,137 @@
+body{
+
+    background-color: rgb(17, 16, 16);
+    color: rgb(30, 255, 0);
+}
+h1{
+   
+    padding-left: 100%;
+    transform-style: flat;
+    border-style: dotted;
+    font-size: 200px;  
+    text-align: center; 
+    color: rgb(47, 255, 20)255, 20;   
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a glowing effect */
+    border: 2px dashed #333; /* Set border style and color */  
+    border-radius: 60px; /* Adjust the border-radius to create a rounded shape */  
+    padding: 20px; /* Add padding inside the element */
+    animation: bounceHeader 2s infinite;
+}
+
+@keyframes bounceHeader {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+.p1{
+    padding-left: 10%;
+    font-size: 210%;
+    font-style: initial;
+}
+h2{
+    font-size: 190%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a glowing effect */
+}
+form{
+    /* background-color: aqua; */
+    border: 10px;
+}
+button{
+    font-size: 18px;
+    background-color: #74f354;
+    color: #FFFFFF;
+    height: 40px;
+    width: 200%; /* Adjusted width to fill the container */
+    border: 0;
+    border-radius: 6px;
+    /* Removed the right, align-items, and position properties */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Keep the glowing effect */
+    left: 300%;
+    text-align: center;
+    position: unset;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Optional: Make labels bold */
+}
+
+input,
+textarea {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Optional: Add some styling to the required indicator */
+input:required, textarea:required {
+    border: 2px solid rgb(9, 255, 0); /* Change the border color for required fields */
+}
+
+section {
+    max-width: 1190px; /* Set the maximum width of the box */
+    margin: 70px auto; /* Center the box and add some margin */
+    padding: 20px; /* Add padding inside the box */
+    border: 2px solid greenyellow; /* Add a border around the box */
+    box-sizing: border-box; /* Include padding and border in the box size */
+}
+
+textarea {
+    width: calc(100% - 16px); /* Adjust the width and subtract any padding/margin */
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Optional: Add some styling to the required indicator */
+textarea:required {
+    border: 1px solid rgb(9, 255, 0); /* Change the border color for required fields */
+}
+
+footer{
+    text-align: center;
+    padding-left: -10%;
+    height: 50px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px; /* Adjust font size for smaller screens */
+}
+
+.p1 {
+    padding-left: 5%;
+    font-size: 30px; /* Adjust font size for smaller screens */
+}
+
+section {
+    padding: 10px; /* Adjust padding for smaller screens */
+}
+
+form,
+button,
+label,
+input,
+textarea {
+    width: 100%; /* Make form elements full-width on smaller screens */
+}
+
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 600px) {
+     
+    section {
+        padding: 5px;
+    }
+}

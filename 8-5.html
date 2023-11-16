@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="connect.php">
+
+    <title>JobTalks</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome  to  Job  Talks</h1>
+        <p class="p1">Share your most uncomfortable work experiences and raise awareness &#128512</p>
+
+    </header>
+    <section id="main-content">
+        <article>
+            <h2>Share Your Story</h2>
+            <form action="connect.php" method="post">
+                <!-- ... other form fields ... -->
+                <label for="name_jina">Your Name:</label>
+                <input type="text" id="name_jina" name="name_jina" required>
+
+                <label for="job_experience">Job Experience:</label>
+                <textarea id="job_experience" name="job_experience" required></textarea>
+                
+                <tr>
+                    <td colspan="2" align="center" ><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+                </tr>
+            </form>
+            
+        </article>
+
+        <article>
+            <h2>Latest Stories</h2>
+            <!-- Display the latest stories here -->
+            <div class="story">
+                <h3>John Doe</h3>
+                <p>Had a tough time at XYZ Corp Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, 
+                   adipisci sit! Libero, ad consequatur?  
+                   Obcaecati placeat, quo nesciunt, possimus laborum mollitia temporibus vero 
+                   quisquam praesentium beatae ad veritatis asperiores voluptates.</p>
+            </div>
+            <!-- Add more stories as needed -->
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 JobTalks | Designed by ERA</p>
+    </footer>
+</body>
+</html>
