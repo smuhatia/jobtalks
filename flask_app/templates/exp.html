@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Experiences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .experience-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .experience-card h3 {
+            color: #007BFF;
+        }
+
+        .experience-card p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Experiences</h1>
+
+    {% if stories %}
+        {% for story in stories %}
+            <div class="experience-card">
+                <h3>ID: {{ story[0] }}</h3>
+                <p><strong>Name:</strong> {{ story[1] }}</p>
+                <p><strong>Job Experience:</strong> {{ story[2] }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No experiences available.</p>
+    {% endif %}
+</body>
+</html>
