@@ -18,6 +18,7 @@ Follow JobTalks on social media to stay updated on the latest stories, community
 Facebook: JobTalks
 Twitter: @JobTalks
 Instagram: jobtalks_official
+
 Contributing
 We welcome contributions to make JobTalks even better. If you have ideas for features, improvements, or bug fixes, feel free to submit a pull request.
 
